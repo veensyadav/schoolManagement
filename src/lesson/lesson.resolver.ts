@@ -48,7 +48,7 @@ export class LessonResolver {
 
   @ResolveField()
   async students(@Parent() lesson: Lesson) {
-    console.log(lesson);
+    // console.log(lesson);
     return this.studentService.getManyStudents(lesson.students);
   }
 }
